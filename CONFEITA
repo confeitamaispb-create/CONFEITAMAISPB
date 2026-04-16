@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loja Confeita Mais | Links</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --chocolate: #4B2A1A;
+      --doce-leite: #D4A373;
+      --creme: #FDF8F5;
+      --gold: #B8860B;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #4B2A1A 0%, #2B160D 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .deco {
+      position: absolute;
+      font-size: 40px;
+      opacity: 0.1;
+      color: white;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+
+    .card {
+      position: relative;
+      background: rgba(255, 255, 255, 0.95);
+      max-width: 400px;
+      width: 100%;
+      border-radius: 40px;
+      padding: 40px 25px;
+      text-align: center;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+      border: 2px solid var(--doce-leite);
+    }
+
+    .logo-container {
+      width: 150px;
+      height: 150px;
+      margin: -90px auto 20px;
+      background: white;
+      border-radius: 50%;
+      padding: 5px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      border: 4px solid var(--doce-leite);
+    }
+
+    .logo-container img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      color: var(--chocolate);
+      font-size: 42px;
+    }
+
+    .subtitle {
+      color: var(--doce-leite);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+      margin-bottom: 30px;
+    }
+
+    .section-label {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 15px;
+      color: var(--chocolate);
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .section-label::before, .section-label::after {
+      content: "";
+      height: 1px;
+      width: 40px;
+      background: var(--doce-leite);
+    }
+
+    .atendentes {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      margin-bottom: 25px;
+    }
+
+    .atendente {
+      background: var(--creme);
+      border-radius: 20px;
+      padding: 15px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .atendente:hover {
+      transform: scale(1.05);
+      background: white;
+    }
+
+    .atendente img {
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      border: 2px solid var(--doce-leite);
+    }
+
+    .atendente span {
+      display: block;
+      font-size: 13px;
+      color: var(--chocolate);
+      font-weight: 600;
+    }
+
+    .atendente:nth-child(3) {
+      grid-column: 1 / -1;
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      text-decoration: none;
+      background: var(--chocolate);
+      color: white;
+      padding: 16px;
+      border-radius: 18px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #361e13;
+      transform: translateY(-2px);
+    }
+
+    footer {
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid rgba(212, 163, 115, 0.2);
+      font-size: 10px;
+      color: #888;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="deco" style="top:10%; left:10%;">👨‍🍳</div>
+  <div class="deco" style="top:70%; left:5%;">🍪</div>
+  <div class="deco" style="top:20%; right:10%;">🍰</div>
+  <div class="deco" style="top:40%; right:15%;">🍫</div>
+
+  <div class="card">
+
+    <div class="logo-container">
+      <img src="https://i.ibb.co/NbpTQ5D/IMG-20260302-WA0042.jpg">
+    </div>
+
+    <h1>Confeita Mais</h1>
+    <p class="subtitle">A arte de adoçar momentos</p>
+
+    <div class="section-label">FALE COM NOSSOS ESPECIALISTAS</div>
+
+    <div class="atendentes">
+
+      <div class="atendente" onclick="enviarZap('558391394485', 'Jaqueline')">
+        <img src="https://i.ibb.co/HsdfjPy/IMG-20260304-WA0114.jpg">
+        <span>Jaqueline - Delivery</span>
+      </div>
+
+      <div class="atendente" onclick="enviarZap('558398884504', 'Ana')">
+        <img src="https://i.ibb.co/SDcQfPBC/IMG-20260304-WA0113.jpg">
+        <span>Ana - Delivery</span>
+      </div>
+
+      <div class="atendente" onclick="enviarZap('558393961285', 'Alisson')">
+        <img src="https://i.ibb.co/1g4hv9R/IMG-20260304-WA0107.jpg">
+        <span>Alisson - Personalizados</span>
+      </div>
+
+    </div>
+
+    <div class="section-label">NOSSA LOJA</div>
+
+    <a href="https://www.confeitamais.com.br/" class="btn">
+      🛒 ACESSAR NOSSO SITE
+    </a>
+
+    <a href="https://www.google.com/maps/search/?api=1&query=Av.+Pres.+Epit%C3%A1cio+Pessoa,+402+-+Torre,+Jo%C3%A3o+Pessoa+-+PB,+58040-000" target="_blank" class="btn">
+      📍 COMO CHEGAR NA LOJA
+    </a>
+
+    <footer>
+      © 2026 CONFEITA MAIS - TODOS OS DIREITOS RESERVADOS
+    </footer>
+
+  </div>
+
+  <script>
+    function enviarZap(numero, nome) {
+      const msg = encodeURIComponent(`Olá ${nome}! Gostaria de informações sobre os produtos da Confeita Mais. 🍰`);
+      window.open(`https://wa.me/${numero}?text=${msg}`, '_blank');
+    }
+  </script>
+
+</body>
+</html>
