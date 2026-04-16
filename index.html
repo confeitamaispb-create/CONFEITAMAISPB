@@ -13,6 +13,7 @@
       --doce-leite: #D4A373;
       --creme: #FDF8F5;
       --gold: #B8860B;
+      --feedback: #8d6e63; /* Tom marrom suave para o feedback */
     }
 
     * {
@@ -169,6 +170,18 @@
       transform: translateY(-2px);
     }
 
+    /* Estilo especial para o botão de feedback */
+    .btn-feedback {
+      background: var(--creme);
+      color: var(--chocolate);
+      border: 2px dashed var(--doce-leite);
+    }
+
+    .btn-feedback:hover {
+      background: #fdf2e9;
+      border-style: solid;
+    }
+
     footer {
       margin-top: 30px;
       padding-top: 15px;
@@ -223,8 +236,12 @@
       🛒 ACESSAR NOSSO SITE
     </a>
 
-    <a href="https://www.google.com/maps/search/?api=1&query=Av.+Pres.+Epit%C3%A1cio+Pessoa,+402+-+Torre,+Jo%C3%A3o+Pessoa+-+PB,+58040-000" target="_blank" class="btn">
+    <a href="https://g.page/r/CewlC0jHrBxTEBM/review" target="_blank" class="btn">
       📍 COMO CHEGAR NA LOJA
+    </a>
+
+    <a href="https://g.page/r/CewlC0jHrBxTEBM/review" target="_blank" class="btn btn-feedback">
+      🤎 DEIXAR UMA AVALIAÇÃO
     </a>
 
     <footer>
