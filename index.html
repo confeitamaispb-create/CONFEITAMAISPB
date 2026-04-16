@@ -12,8 +12,7 @@
       --chocolate: #4B2A1A;
       --doce-leite: #D4A373;
       --creme: #FDF8F5;
-      --gold: #B8860B;
-      --feedback: #8d6e63; /* Tom marrom suave para o feedback */
+      --google-blue: #4285F4;
     }
 
     * {
@@ -170,16 +169,23 @@
       transform: translateY(-2px);
     }
 
-    /* Estilo especial para o botão de feedback */
-    .btn-feedback {
-      background: var(--creme);
-      color: var(--chocolate);
-      border: 2px dashed var(--doce-leite);
+    /* Estilo do Botão Google */
+    .btn-google {
+      background: white;
+      color: #5f6368;
+      border: 1px solid #dadce0;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     }
 
-    .btn-feedback:hover {
-      background: #fdf2e9;
-      border-style: solid;
+    .btn-google:hover {
+      background: #f8f9fa;
+      border-color: #d2e3fc;
+      color: var(--google-blue);
+    }
+
+    .google-icon {
+      width: 20px;
+      height: 20px;
     }
 
     footer {
@@ -212,22 +218,18 @@
     <div class="section-label">FALE COM NOSSOS ESPECIALISTAS</div>
 
     <div class="atendentes">
-
       <div class="atendente" onclick="enviarZap('558391394485', 'Jaqueline')">
         <img src="https://i.ibb.co/HsdfjPy/IMG-20260304-WA0114.jpg">
         <span>Jaqueline - Delivery</span>
       </div>
-
       <div class="atendente" onclick="enviarZap('558398884504', 'Ana')">
         <img src="https://i.ibb.co/SDcQfPBC/IMG-20260304-WA0113.jpg">
         <span>Ana - Delivery</span>
       </div>
-
       <div class="atendente" onclick="enviarZap('558393961285', 'Alisson')">
         <img src="https://i.ibb.co/1g4hv9R/IMG-20260304-WA0107.jpg">
         <span>Alisson - Personalizados</span>
       </div>
-
     </div>
 
     <div class="section-label">NOSSA LOJA</div>
@@ -236,12 +238,13 @@
       🛒 ACESSAR NOSSO SITE
     </a>
 
-    <a href="https://g.page/r/CewlC0jHrBxTEBM/review" target="_blank" class="btn">
+    <a href="https://g.page/r/CewlC0jHrBxTEBM/" target="_blank" class="btn">
       📍 COMO CHEGAR NA LOJA
     </a>
 
-    <a href="https://g.page/r/CewlC0jHrBxTEBM/review" target="_blank" class="btn btn-feedback">
-      🤎 DEIXAR UMA AVALIAÇÃO
+    <a href="https://g.page/r/CewlC0jHrBxTEBM/review" target="_blank" class="btn btn-google">
+      <img src="https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png" class="google-icon" alt="Google">
+      NOS AVALIE NO GOOGLE
     </a>
 
     <footer>
