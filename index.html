@@ -98,6 +98,7 @@
       color: var(--chocolate);
       font-size: 14px;
       font-weight: 600;
+      margin-top: 20px;
     }
 
     .section-label::before, .section-label::after {
@@ -107,6 +108,7 @@
       background: var(--doce-leite);
     }
 
+    /* GRID CONFIGURADO PARA 2 COLUNAS */
     .atendentes {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -120,11 +122,13 @@
       padding: 15px;
       cursor: pointer;
       transition: 0.3s;
+      border: 1px solid transparent;
     }
 
     .atendente:hover {
       transform: scale(1.05);
       background: white;
+      border-color: var(--doce-leite);
     }
 
     .atendente img {
@@ -133,6 +137,7 @@
       border-radius: 50%;
       margin-bottom: 10px;
       border: 2px solid var(--doce-leite);
+      object-fit: cover;
     }
 
     .atendente span {
@@ -140,12 +145,7 @@
       font-size: 13px;
       color: var(--chocolate);
       font-weight: 600;
-    }
-
-    .atendente:nth-child(3) {
-      grid-column: 1 / -1;
-      width: 50%;
-      margin: 0 auto;
+      line-height: 1.2;
     }
 
     .btn {
@@ -169,7 +169,6 @@
       transform: translateY(-2px);
     }
 
-    /* Estilo do Botão Google */
     .btn-google {
       background: white;
       color: #5f6368;
@@ -209,26 +208,35 @@
   <div class="card">
 
     <div class="logo-container">
-      <img src="https://i.ibb.co/NbpTQ5D/IMG-20260302-WA0042.jpg">
+      <img src="https://i.ibb.co/NbpTQ5D/IMG-20260302-WA0042.jpg" alt="Logo">
     </div>
 
     <h1>Confeita Mais</h1>
     <p class="subtitle">A arte de adoçar momentos</p>
 
     <div class="section-label">FALE COM NOSSOS ESPECIALISTAS</div>
-
+    
     <div class="atendentes">
-      <div class="atendente" onclick="enviarZap('558391394485', 'Jaqueline')">
-        <img src="https://i.ibb.co/HsdfjPy/IMG-20260304-WA0114.jpg">
-        <span>Jaqueline - Delivery</span>
-      </div>
+      <!-- DUPLA 1: ANA E LAIS -->
       <div class="atendente" onclick="enviarZap('558398884504', 'Ana')">
         <img src="https://i.ibb.co/SDcQfPBC/IMG-20260304-WA0113.jpg">
         <span>Ana - Delivery</span>
       </div>
+
+      <div class="atendente" onclick="enviarZap('558398884504', 'Laís')">
+        <img src="https://i.ibb.co/bg3NLzrX/Whats-App-Image-2026-05-15-at-10-46-50.jpg">
+        <span>Laís - Delivery</span>
+      </div>
+
+      <!-- DUPLA 2: ALISSON E JACK -->
       <div class="atendente" onclick="enviarZap('558393961285', 'Alisson')">
         <img src="https://i.ibb.co/1g4hv9R/IMG-20260304-WA0107.jpg">
         <span>Alisson - Personalizados</span>
+      </div>
+
+      <div class="atendente" onclick="enviarZap('558391394485', 'Jaqueline')">
+        <img src="https://i.ibb.co/HsdfjPy/IMG-20260304-WA0114.jpg">
+        <span>Jaqueline - Faturamento</span>
       </div>
     </div>
 
