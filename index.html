@@ -12,11 +12,11 @@
 
 <style>
 :root{
-
-  --cacau:#563C19;          
-  --cacau-escuro:#3B2711;   
-  --cacau-medio:#664820;    
-  --caramelo:#F0A456;       
+  /* Identidade visual Confeita Mais */
+  --cacau:#563C19;          /* marrom da marca (fundo do logo) */
+  --cacau-escuro:#3B2711;   /* fundo da página */
+  --cacau-medio:#664820;    /* cartões e botões secundários */
+  --caramelo:#F0A456;       /* laranja/caramelo da marca */
   --caramelo-claro:#F7C58B;
   --dourado:#D9A441;
   --creme:#FFF6E9;
@@ -51,7 +51,8 @@ body{
   color:var(--creme);
 }
 
-
+/* ---------- FUNDO: fitas onduladas e estrelas da marca ---------- */
+.fundo{
   position:fixed;
   inset:0;
   width:100%;
@@ -95,7 +96,7 @@ body{
   .e4{ width:28px; height:28px; }
 }
 
-
+/* ---------- CARD ---------- */
 .card{
   position:relative;
   z-index:2;
@@ -140,7 +141,7 @@ h1{
   opacity:.92;
 }
 
-
+/* ---------- TÍTULOS DE SEÇÃO ---------- */
 .secao{
   display:flex;
   align-items:center;
@@ -159,7 +160,7 @@ h1{
   background:rgba(240,164,86,.4);
 }
 
-
+/* ---------- ATENDENTES ---------- */
 .atendentes{
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -212,7 +213,7 @@ h1{
   line-height:1.35;
 }
 
-
+/* ---------- BOTÕES ---------- */
 .btn{
   width:100%;
   display:flex;
@@ -238,7 +239,7 @@ h1{
 }
 .btn-icon svg{ width:100%; height:100%; }
 
-
+/* principal: pedido com CNPJ (foco no negócio do cliente) */
 .btn-principal{
   background:var(--caramelo);
   color:var(--cacau-escuro);
@@ -247,7 +248,7 @@ h1{
 }
 .btn-principal:hover{ background:var(--caramelo-claro); border-color:var(--caramelo-claro); }
 
-
+/* secundários */
 .btn-sec{
   background:var(--cacau-escuro);
   color:var(--creme);
@@ -300,7 +301,7 @@ footer{
 
 <body>
 
-
+<!-- Fitas onduladas da marca -->
 <svg class="fundo fundo-mobile" viewBox="0 0 400 800" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
   <path class="fita" d="M70,-40 C150,120 330,180 290,330 C255,455 60,470 90,640 C105,725 190,790 260,850"/>
   <path class="fita" d="M-60,610 C40,560 120,640 200,700 C280,760 360,720 470,640"/>
